@@ -1,0 +1,232 @@
+.results {
+  position: relative;
+  margin-bottom: 50px;
+
+  .title {
+    position: absolute;
+    top: 99px;
+    left: 0;
+    right: 49%;
+    background: #F21915;
+    height: 57px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 53px;
+    color: #fff;
+    margin-top: 155px;
+    position: relative;
+    margin-bottom: 45px;
+    margin-left: auto;
+    width: 630px;
+
+    &:before {
+      content: "Посмотри на результаты";
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 53px;
+      color: #fff;
+      margin: 0;
+      position: absolute;
+      left: 0;
+      top: -56px;
+    }
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+  }
+
+  .results-slider {
+    width: 660px;
+    margin-left: auto;
+    margin-right: -30px;
+  }
+
+  .left-part {
+    width: 49%;
+    flex-basis: 49%;
+    background: #000;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.14);
+  }
+
+
+  .right-part {
+    flex-basis: 51%;
+    background: #fff;
+    padding-top: 243px;
+    padding-left: 100px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.14);
+  }
+
+  .image {
+    margin-bottom: 54px;
+  }
+
+  ///slick-prev slick-next
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-arrow-right:before {
+    content: "\e901";
+    font-size: 14px;
+    color: #000;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 1px;
+  }
+
+  .slick-prev.slick-arrow {
+    background: #0D0D0D;
+    bottom: 23px;
+    right: 50px;
+  }
+
+  .slick-next {
+    bottom: 23px;
+    right: 0;
+    border-left: 1px solid #D8D8D8;
+  }
+
+  .slick-prev, .slick-next {
+    font-size: 14px;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #353535;;
+    border: none;
+    outline: none;
+    background: #fff;
+    z-index: 1;
+  }
+
+  //slider dots begin
+
+  .slick-dots {
+    position: absolute;
+    bottom: 60px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    left: -4px;
+  }
+
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 4px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 4px;
+    background: #F21915;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+  }
+
+  //slider dots end
+
+  h6 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    margin-bottom: 40px;
+    max-width: 460px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 23px;
+      color: #151515;
+      padding: 5px 8px;
+      border: none;
+      border-bottom: 1px solid #C4C4C4;
+      background: transparent;
+      max-width: 372px;
+      width: 372px;
+    }
+
+    input[type=text] {
+      margin-bottom: 24px;
+    }
+
+    input::-webkit-input-placeholder { color: #151515; }
+    input::-ms-input-placeholder { color: #151515; }
+    input::-ms-input-placeholder { color: #151515; }
+    input::placeholder { color: #151515; }
+
+    button {
+      background: #F21915;
+      border-radius: 2px;
+      border: none;
+      width: 273px;
+      height: 54px;
+      display: inline-block;
+      margin-top: 55px;
+
+      .btn {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 11px 59px;
+      }
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 26px;
+      color: #151515;
+      margin-top: 65px;
+      max-width: 455px;
+
+      span {
+        font-weight: bold;
+        color: #F21915;
+      }
+    }
+  }
+
+}

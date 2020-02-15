@@ -1,0 +1,142 @@
+
+.services {
+  background: #FFFFFF;
+  position: relative;
+  padding-top: 36px;
+
+  .title {
+    position: absolute;
+    top: -57px;
+    left: 0;
+    right: 65%;
+    background: #F21915;
+    height: 57px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    color: #151515;
+    margin-bottom: 53px;
+    max-width: 565px;
+
+    &:before {
+      content: "Наши услуги";
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 53px;
+      color: #FFFFFF;
+      margin: 0;
+      position: absolute;
+      left: 15px;
+      top: -91px;
+    }
+  }
+
+  h6 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+
+  .left-part {
+    flex-basis: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .item.black {
+      .text {
+        margin-left: 40px;
+      }
+
+      .image {
+        max-width: 303px;
+        max-height: 272px;
+      }
+    }
+  }
+
+  .right-part {
+    flex-basis: 49%;
+    padding-top: 60px;
+    padding-bottom: 13px;
+
+    .item.black {
+      .text {
+        margin-right: 47px;
+      }
+    }
+  }
+
+  .item.red {
+    background: #F21915;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.14);
+
+    .image {
+      max-width: 272px;
+      max-height: 272px;
+    }
+
+    h6 {
+      max-width: 250px;
+      margin-right: 105px;
+    }
+  }
+
+  .item.white {
+    margin-top: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.14);
+
+    h6 {
+      color: #000;
+    }
+
+    .text {
+      margin-left: 40px;
+    }
+
+    .button {
+      border: 1px solid #000;
+      .btn {
+        color: #000;
+      }
+    }
+  }
+
+  .item.black {
+    background: #000;
+    width: 573px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.14);
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .button {
+    background: transparent;
+    border: 1px solid #fff;
+    width: 172px;
+    .btn {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 12px 31px;
+    }
+  }
+
+}

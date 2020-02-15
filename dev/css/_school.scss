@@ -1,0 +1,140 @@
+.school {
+  position: relative;
+  padding-top: 137px;
+
+  .title {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 51%;
+    background: #F21915;
+    height: 57px;
+  }
+
+  .text-caption {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    color: #151515;
+    margin-bottom: 30px;
+    max-width: 820px;
+
+    &:before {
+      content: "Школа GoodLashes";
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 53px;
+      color: #FFFFFF;
+      margin: 0;
+      position: absolute;
+      left: 15px;
+      top: -85px;
+    }
+  }
+
+  .left-part {
+    flex-basis: 53%;
+    background: #000;
+    padding-top: 37px;
+    padding-bottom: 109px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .text {
+      margin-right: 135px;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 45px;
+      color: #FFFFFF;
+      margin-bottom: 25px;
+      max-width: 490px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 23px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      max-width: 524px;
+    }
+  }
+
+  .left {
+    flex-basis: 36%;
+    background: transparent;
+    justify-content: flex-end;
+    position: relative;
+
+    .image {
+      position: absolute;
+      right: -65px;
+      width: 100%;
+    }
+  }
+
+  .right-part {
+    flex-basis: 51%;
+    background: #fff;
+  }
+
+  .right {
+    flex-basis: 64%;
+    background: #fff;
+    margin-top: -38px;
+    padding-left: 168px;
+    padding-top: 47px;
+    padding-bottom: 22px;
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.14);
+
+    h4 {
+      margin-bottom: 25px;
+      max-width: 555px;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 45px;
+      color: #000000;
+    }
+
+    .program {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 26px;
+
+      ul {
+        margin-right: 74px;
+      }
+
+      .first {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .button {
+    background: #F21915;
+    border: 1px solid #fff;
+    width: 172px;
+    .btn {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 12px 31px;
+    }
+  }
+
+  .image {
+    width: 68%;
+  }
+
+  .school-inner.bottom {
+    margin-top: -80px;
+    margin-bottom: 30px;
+  }
+}
