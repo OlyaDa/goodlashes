@@ -8,8 +8,8 @@
     <meta property="og:description"
           content=""/>
     <meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.img">
-    <meta property="og:url" content="https://teleport-plus.com/"/>
-    <meta property="og:site_name" content="teleport-plus"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
     <title>GoodLashes</title>
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext"
@@ -41,7 +41,8 @@
                         </div>
                         <div class="address">
                             <p>г.Киев</p>
-                            <a href="tel:+380501500501" class="phone">+38 (050) 150-05-01</a>
+                            <a href="tel:+380989306683"> +38 (098) 930-66-83 </a>
+                            <a href="tel:+380669306683"> +38 (066) 930-66-83 </a>
                         </div>
                     </div>
 
@@ -89,7 +90,8 @@
 
                         <div class="address">
                             <p>г.Киев</p>
-                            <a href="tel:+380501500501" class="phone">+38 (050) 150-05-01</a>
+                            <a href="tel:+380989306683" class="phone"> +38 (098) 930-66-83 </a>
+                            <a href="tel:+380669306683" class="phone"> +38 (066) 930-66-83 </a>
                         </div>
                     </div>
 
@@ -228,6 +230,12 @@
                             <input name="order" type="hidden"
                                    value="Запишитесь на бесплатную консультацию">
 
+                            <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                            <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                            <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+                            <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                            <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
                             <div class="d-flex holder">
                                 <button class="disbutt" disabled>
                                     <span class="btn">Записаться</span>
@@ -320,7 +328,7 @@
         <section class="services" id="services">
             <div class="title"></div>
             <div class="container">
-                <p>Мы оборудованны всеми необходимыми инструментами. В студии поддерживается необходимый, для
+                <p>Мы оборудованы всеми необходимыми инструментами. В студии поддерживается необходимый, для
                     данного вида услуг температурный режим, уровень освещения и влажности</p>
             </div>
 
@@ -427,6 +435,12 @@
                         <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
                         <input name="order" type="hidden"
                                value="Запишитесь на бесплатную консультацию">
+
+                        <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
 
 
                         <button class="disbutt" disabled>
@@ -539,41 +553,41 @@
 
                     <div class="item">
                         <div class="image">
-                            <img src="images/cosm2.png" alt="">
+                            <img src="images/cosm2.jpg" alt="">
                         </div>
                         <div class="item-body">
-                            <h6>Сыворотка для роста ресниц</h6>
-                            <p>RapidLash 3 ML (0,1 жидк. унции)</p>
+                            <h6>Пенка для снятия макияжа с ресниц и лица</h6>
+                            <p>«MOUSSE ROSE» In Lei, 100 ML</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="image">
-                            <img src="images/cosm3.png" alt="">
+                            <img src="images/cosm3.jpg" alt="">
                         </div>
                         <div class="item-body">
-                            <h6>Перманентный гель для ламинирования ресниц и бровей </h6>
-                            <p>THUYA Состав №1</p>
+                            <h6>Пенка для снятия макияжа с ресниц и лица</h6>
+                            <p>«MOUSSE ROSE» In Lei, 100 ML</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="image">
-                            <img src="images/cosm4.png" alt="">
+                            <img src="images/cosm4.jpg" alt="">
                         </div>
                         <div class="item-body">
-                            <h6>Мыло для укладки бровей</h6>
-                            <p>Zola</p>
+                            <h6>Пенка для снятия макияжа с ресниц и лица</h6>
+                            <p>«MOUSSE ROSE» In Lei, 100 ML</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="image">
-                            <img src="images/cosm3.png" alt="">
+                            <img src="images/cosm3.jpg" alt="">
                         </div>
                         <div class="item-body">
-                            <h6>Перманентный гель для ламинирования ресниц и бровей </h6>
-                            <p>THUYA Состав №1</p>
+                            <h6>Пенка для снятия макияжа с ресниц и лица</h6>
+                            <p>«MOUSSE ROSE» In Lei, 100 ML</p>
                         </div>
                     </div>
 
@@ -594,7 +608,13 @@
                         <input placeholder="E-mail *" type="text" name="name" required>
                         <input placeholder="Телефон *" type="tel" name="phone"
                                class="phoneidcl" required>
-                        <input name="order" type="hidden" value="Остались вопросы?">
+                        <input name="order" type="hidden" value="Заполни форму и скачай прайс-лист">
+
+                        <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
 
                         <button class="disbutt" disabled>
                             <span class="btn"> <span class="icon-download"></span> Скачать прайс</span>
@@ -630,59 +650,67 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!--.......................CONTACT.......................-->
+        <!--.......................CONTACT.......................-->
 
-    <section class="contact" id="contact">
-        <div class="title"></div>
-        <div class="left"></div>
-        <div class="right"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 cont">
-                    <ul class="list-reset">
-                        <li>
-                            <span class="icon-map"></span> г. Киев, ул. Урловская 4
-                            <span class="marg">(вход со двора)</span>
-                        </li>
-                        <li>
-                            <a href="tel:+380989306683"> <span class="icon-phone"></span> +38 (098) 930-66-83 </a>
-                        </li>
-                        <li>
-                            <a href="tel:+380669306683"> <span class="icon-phone"></span> +38 (066) 930-66-83 </a>
-                        </li>
-                        <li>
-                            <a href="mailto:goodlashes@ukr.net"> <span class="icon-envelope"></span> goodlashes@ukr.net
-                            </a>
-                        </li>
-                        <li class="social">
-                            <a href="#"><span class="icon-instagram"></span></a>
-                            <a href="#"><span class="icon-facebook"></span></a>
-                        </li>
-                    </ul>
+        <section class="contact" id="contact">
+            <div class="title"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 cont">
+                        <ul class="list-reset">
+                            <li>
+                                <span class="icon-map"></span> г. Киев, ул. Урловская 4
+                                <span class="marg">(вход со двора)</span>
+                            </li>
+                            <li>
+                                <a href="tel:+380989306683"> <span class="icon-phone"></span> +38 (098) 930-66-83 </a>
+                            </li>
+                            <li>
+                                <a href="tel:+380669306683"> <span class="icon-phone"></span> +38 (066) 930-66-83 </a>
+                            </li>
+                            <li>
+                                <a href="mailto:goodlashes@ukr.net"> <span class="icon-envelope"></span>
+                                    goodlashes@ukr.net
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="#"><span class="icon-instagram"></span></a>
+                                <a href="#"><span class="icon-facebook"></span></a>
+                            </li>
+                        </ul>
 
-                    <div class="time">
-                        <p><span>Время работы:</span> вт-сб. с 10:00 до 20:00</p>
+                        <div class="time">
+                            <p><span>Время работы:</span> вт-сб. с 10:00 до 20:00</p>
 
-                        <p><span>Выходные:</span> вс-пн.</p>
+                            <p><span>Выходные:</span> вс-пн.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 justify-content-center align-items-center d-flex">
+                        <form class="order-main d-flex flex-column">
+                            <h4 class="form-title">Остались вопросы?</h4>
+                            <input placeholder="Имя" type="text" name="name" required>
+                            <input placeholder="Телефон" type="tel" name="phone"
+                                   class="phoneidcl" required>
+                            <input name="order" type="hidden" value="Остались вопросы?">
+
+                            <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                            <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                            <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+                            <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                            <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+                            <button class="disbutt" disabled>
+                                <span class="btn">Записаться</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <div class="col-lg-6 justify-content-center align-items-center d-flex">
-                    <form class="order-main d-flex flex-column">
-                        <h4 class="form-title">Остались вопросы?</h4>
-                        <input placeholder="Имя" type="text" name="name" required>
-                        <input placeholder="Телефон" type="tel" name="phone"
-                               class="phoneidcl" required>
-                        <input name="order" type="hidden" value="Остались вопросы?">
-                        <button class="disbutt" disabled>
-                            <span class="btn">Записаться</span>
-                        </button>
-                    </form>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!--.......................FOOTER.......................-->
 
@@ -698,67 +726,73 @@
                         <img class="logo" src="images/logo.png" alt="logo">
                     </a>
                 </div>
-                <p> <i class="far fa-copyright"></i> 2020, goodlashes, all rights reserved</p>
+                <p><i class="far fa-copyright"></i> 2020, goodlashes, all rights reserved</p>
             </div>
         </div>
     </footer>
     <!--<div class="devgen p-1 text-center">-->
-        <!--<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by-->
-            <!--GenerationLeadStudio</a>-->
+    <!--<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by-->
+    <!--GenerationLeadStudio</a>-->
     <!--</div>-->
+</div>
+
+<!--/////pop-up//////-->
+
+<div id="popup" class="mfp-hide popup">
+    <div class="title"></div>
+    <div class="container">
+
+        <div class="logo">
+            <a href="#">
+                <img class="logo" src="images/logo-mob.png" alt="logo">
+            </a>
+        </div>
+
+        <form class="order-main2">
+            <h4 class="form-title">
+                <span id="customTextForm4">
+                <span class="d-block">Заполните форму</span> и запишитесь на приём к специалисту
+                </span>
+            </h4>
+            <input placeholder="Имя" type="text" name="name" required>
+            <input placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>
+            <input name="order" type="hidden" id="input_order">
+
+            <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+            <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+            <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+            <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+            <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+            <button class="disbutt" disabled>
+                <span>Записаться </span>
+            </button>
+        </form>
     </div>
+</div>
 
-    <!--/////pop-up//////-->
-
-<!--<div id="popup" class="mfp-hide popup">-->
-    <!--<div class="container">-->
-
-        <!--<div class="logo">-->
-            <!--<a href="#">-->
-                <!--<img class="logo" src="images/logo-mob.png" alt="logo">-->
-            <!--</a>-->
-        <!--</div>-->
-
-        <!--<form class="order-main2">-->
-            <!--<h4 class="form-title">-->
-                <!--<span id="customTextForm4">-->
-                <!--<span class="d-block">Заполните форму</span>ниже-->
-<!--и запишитесь на -->
-<!--приём к специалисту-->
-                <!--</span>-->
-            <!--</h4>-->
-            <!--<input placeholder="Имя" type="text" name="name" required>-->
-            <!--<input placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>-->
-            <!--<input name="order" type="hidden" id="input_order">-->
-            <!--<button class="disbutt" disabled>-->
-                <!--<span>Записаться </span>-->
-            <!--</button>-->
-        <!--</form>-->
-    <!--</div>-->
-<!--</div>-->
-
-    <!--pop-up end-->
+<!--pop-up end-->
 
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Fontawesome -->
-    <script defer src="js/all.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Slick -->
-    <script src="js/slick.min.js"></script>
-    <!-- Magnific Popup core JS file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Input Mask -->
-    <script src="js/jquery.inputmask.bundle.min.js"></script>
-    <!-- Page Scroll -->
-    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Fontawesome -->
+<script defer src="js/all.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Slick -->
+<script src="js/slick.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Input Mask -->
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<!-- Page Scroll -->
+<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+<!-- Main JS -->
+<script src="js/main.js"></script>
 </body>
 </html>

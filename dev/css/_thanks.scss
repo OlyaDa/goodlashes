@@ -1,0 +1,113 @@
+.thanks {
+  position: relative;
+  min-height: 100vh;
+  background: url("../images/bg-banner.png") top right no-repeat #000;
+  background-size: auto 100%;
+
+  .thanks-inner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    max-width: 242px;
+    max-height: 76px;
+  }
+
+  .text {
+    font-size: 42px;
+    line-height: 53px;
+    color: #FFFFFF;
+    max-width: 615px;
+    margin-bottom: 0;
+
+    span {
+      font-weight: 900;
+      font-size: 42px;
+      line-height: 53px;
+      color: #F21915;
+    }
+  }
+
+  .subscr {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+
+    .icon-instagram:before {
+      font-size: 46px;
+      color: #FFFFFF;
+      margin-right: 30px;
+    }
+
+    .icon-facebook:before {
+      font-size: 46px;
+      color: #FFFFFF;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 23px;
+      color: #FFFFFF;
+      margin-bottom: 0;
+      max-width: 499px;
+      position: relative;
+      margin-left: 60px;
+
+
+      &:before {
+        position: absolute;
+        top: -28px;
+        content: "";
+        height: 100px;
+        width: 2px;
+        left: -28px;
+        background: rgba(196, 196, 196, 0.1);
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        color: #F21915;
+      }
+    }
+  }
+
+  //media
+
+  @media (max-width: 991px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%), url("../images/bg-banner.png") top right no-repeat #000;
+    background-position: top right -130px;
+  }
+
+  @media (max-width: 715px) {
+    background-position: top right -190px;
+    .subscr {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+        margin: 0;
+        margin-top: 20px;
+        &:before {
+          position: absolute;
+          display: none;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    background-position: top right -300px;
+    .text {
+      font-size: 35px;
+      line-height: 35px;
+    }
+  }
+}

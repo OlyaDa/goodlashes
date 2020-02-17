@@ -97,6 +97,7 @@
   //media
 
   @media (max-width: 991px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%), url("../images/bg-banner.png") top right no-repeat #000;
     background-position: top right -130px;
 
     h3 {
