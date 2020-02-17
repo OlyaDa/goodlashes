@@ -12,6 +12,7 @@ $caption_text: Cera Pro, sans-serif;
 @import "cosmetics";
 @import "price";
 @import "reviews";
+@import "contact";
 @import "footer";
 
 @font-face {
@@ -63,11 +64,9 @@ $caption_text: Cera Pro, sans-serif;
 }
 .icon-facebook:before {
   content: "\e904";
-  color: #fff;
 }
 .icon-instagram:before {
   content: "\e905";
-  color: #fff;
 }
 .icon-map:before {
   content: "\e906";
@@ -84,6 +83,79 @@ $caption_text: Cera Pro, sans-serif;
 }
 
 body {
+
+  .btn:hover, .btn:focus, .btn:active, .btn:visited, .btn:focus-within {
+    outline: none !important;
+  }
+
+  .popup-link:hover, .popup-link:focus, .popup-link:active, .popup-link:visited, .popup-link:focus-within {
+    outline: none !important;
+  }
+
+  .button:hover, .button:focus, .button:active, .button:visited, .button:focus-within {
+    outline: none !important;
+  }
+
+  :focus {
+    outline: none !important;
+  }
+
+  a:active, a:focus {
+    outline: none !important;
+  }
+
+  input, textarea {
+    outline: none !important;
+  }
+  input:active, textarea:active {
+    outline: none !important;
+  }
+  :focus {
+    outline: none !important;
+  }
+  textarea {
+    resize: none !important;
+  }
+  textarea {
+    resize: vertical !important;
+  }
+  textarea {
+    resize: horizontal !important;
+  }
+
+  button, a, .btn {
+    outline: none !important;
+  }
+
+  input, textarea {outline:none;}
+  input:active, textarea:active {outline:none;}
+  :focus {outline:none;}
+  textarea {resize:none;}
+  textarea {resize:vertical;}
+  textarea {resize:horizontal;}
+
+  button:active, button:focus {
+    outline: none;
+  }
+  button::-moz-focus-inner {
+    border: 0;
+  }
+
+  .button:active, .button:focus {
+    outline: none;
+  }
+  .button::-moz-focus-inner {
+    border: 0;
+  }
+
+  a:active, a:focus {
+    outline: none;
+  }
+  a::-moz-focus-inner {
+    border: 0;
+  }
+
+
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -138,35 +210,31 @@ img {
 
 .popup {
   background: #FFFFFF;
-  max-width: 538px;
+  max-width: 522px;
   margin: 0 auto;
   text-align: center;
   position: relative;
-  padding: 40px 0 40px 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 60px 40px;
 
   .logo {
-    max-width: 100px;
-    max-height: 50px;
-    margin: 0 auto 20px auto;
+    max-width: 218px;
+    max-height: 68px;
+    margin-right: auto;
+    margin-bottom: 40px;
   }
 
   form {
     display: inline-block;
     background: #fff;
-    padding: 0 40px 0 40px;
+    //padding: 0 40px 0 40px;
     text-align: center;
 
     .form-title {
-      font-family: "Lato", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 151.5%;
-      text-align: center;
-      letter-spacing: 0.1em;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 53px;
       color: #000;
-      margin-bottom: 20px;
+      position: relative;
     }
 
     .form-text {

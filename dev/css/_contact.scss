@@ -1,0 +1,262 @@
+.contact {
+  position: relative;
+
+  .title {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 60%;
+    background: #F21915;
+    height: 57px;
+    z-index: 1;
+  }
+
+  .left {
+    position: absolute;
+    left: 0;
+    background: #000;
+    width: 49%;
+    height: 100%;
+  }
+
+  .righ {
+    position: absolute;
+    right: 0;
+    width: 51%;
+    height: 100%;
+    background: #fff;
+  }
+
+  ul {
+    margin-top: 174px;
+    position: relative;
+    margin-bottom: 30px;
+
+    &:before {
+      content: "Контакты";
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 53px;
+      color: #FFFFFF;
+      margin: 0;
+      position: absolute;
+      left: 0;
+      top: -92px;
+      z-index: 3;
+    }
+  }
+
+  li a, li {
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+
+    span {
+      margin-right: 13px;
+    }
+
+    .icon-facebook {
+      margin-right: 15px;
+    }
+  }
+
+  .time {
+    margin-bottom: 42px;
+    p {
+      font-size: 18px;
+      line-height: 23px;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .marg {
+    display: block;
+    margin-left: 28px;
+  }
+
+  .map {
+    background: #000;
+  }
+
+  form {
+    .form-title {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 45px;
+      color: #151515;
+      margin-bottom: 40px;
+    }
+
+    input {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 23px;
+      color: #151515;
+      padding: 5px 8px;
+      border: none;
+      border-bottom: 1px solid #C4C4C4;
+      background: transparent;
+      max-width: 372px;
+      width: 372px;
+      //margin-right: 15px;
+      //margin-left: 15px;
+      margin-bottom: 24px;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #151515;
+    }
+    input::-ms-input-placeholder {
+      color: #151515;
+    }
+    input::-ms-input-placeholder {
+      color: #151515;
+    }
+    input::placeholder {
+      color: #151515;
+    }
+
+    button {
+      background: #F21915;
+      border-radius: 2px;
+      width: 273px;
+      height: 54px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 16px;
+      border: 1px solid #F21915;
+      outline: none !important;
+
+      .btn {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 9px 27px;
+        outline: none !important;
+      }
+
+      &:hover {
+        border: 1px solid #000;
+        background: #000;
+        outline: none !important;
+      }
+    }
+  }
+
+  //media
+
+  @media (max-width: 991px) {
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      button {
+        margin-bottom: 30px;
+      }
+    }
+
+    .title {
+      top: 80px;
+      right: 0;
+    }
+
+    .left {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: #000;
+      width: 100%;
+      height: 61%;
+    }
+
+    .social {
+      text-align: center;
+    }
+
+    .cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .time {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+
+    .left {
+      height: 50%;
+    }
+
+    .title {
+      top: 40px;
+      right: 0;
+    }
+
+    ul {
+      margin-top: 83px;
+
+      &:before {
+        left: 20px;
+        font-size: 38px;
+        line-height: 40px;
+        margin-top: 17px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .title {
+      height: 37px;
+    }
+
+    ul {
+      margin-top: 78px;
+
+      &:before {
+        font-size: 28px;
+        line-height: 30px;
+        margin-top: 17px;
+        left: 38px;
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+
+    form .form-title {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    form input {
+      width: 95%;
+      margin: auto;
+    }
+
+    form button {
+      margin-top: 40px;
+    }
+  }
+}

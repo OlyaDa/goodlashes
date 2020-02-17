@@ -55,6 +55,7 @@
       position: absolute;
       left: 0;
       top: -52px;
+      width: 115%;
     }
   }
 
@@ -80,7 +81,6 @@
     background-color: #fff;
     border: none;
     width: 153%;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 
     p, h6 {
       color: #F21915;
@@ -104,4 +104,146 @@
     margin-top: 250px;
     margin-bottom: 147px;
   }
+
+  ///media
+
+  @media (max-width: 991px) {
+
+    .image {
+      margin-top: 40px;
+      margin-bottom: 80px;
+    }
+
+    .left {
+      width: 33.3333%;
+    }
+
+    .middle {
+      left: 33.3333%;
+      width: 33.3333%;
+    }
+
+    .right {
+      width: 33.3333%;
+    }
+
+    .title {
+      top: 80px;
+      right: 0;
+    }
+
+    h4 {
+      margin-top: 135px;
+      margin-bottom: 20px;
+      text-align: center;
+
+      &:before {
+        width: 100%;
+      }
+    }
+
+    .nav-tabs .nav-link {
+      width: 100%;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+      width: 100%;
+    }
+
+    .nav-link {
+      padding: 5px;
+    }
+
+    .nav-tabs .nav-item {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        background: #fff;
+        border: 1px solid #F21915;
+        margin-bottom: 10px;
+
+        h6 {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        p {
+          max-width: 100%;
+          margin: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .image {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      top: 40px;
+      height: 47px;
+    }
+
+    h4 {
+      font-size: 38px;
+      line-height: 40px;
+      margin-top: 87px;
+
+      &:before {
+        font-size: 38px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    .title {
+      height: 37px;
+    }
+
+    h4 {
+      font-size: 28px;
+      line-height: 30px;
+      margin-top: 72px;
+
+      &:before {
+        font-size: 28px;
+        line-height: 30px;
+        top: -31px;
+      }
+    }
+
+    ul li h6 {
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .left {
+      width: 25%;
+    }
+
+    .middle {
+      left: 25%;
+      width: 50%;
+    }
+
+    .right {
+      width: 25%;
+    }
+  }
+
 }

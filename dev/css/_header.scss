@@ -1,12 +1,13 @@
 
 .header {
   background-color: #000;
-  padding: 16px 0;
+  padding: 36px 0;
   position: fixed;
   right: 0;
   left: 0;
-  top: 65px;
-  z-index: 2;
+  //top: 55px;
+  top: 0;
+  z-index: 7;
 
   .header__inner {
     display: flex;
@@ -79,9 +80,17 @@
 
     .social {
       margin-left: 20px;
+
+      .icon-facebook:before {
+        content: "\e904";
+        color: #fff;
+      }
+      .icon-instagram:before {
+        content: "\e905";
+        color: #fff;
+      }
     }
   }
-
 
   .icon-facebook {
     margin-left: 10px;
@@ -91,6 +100,110 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  //mobile menu from right to center
+
+  .mobile-menu {
+    width: 100%;
+    position: absolute;
+    top: -36px;
+    bottom: 0;
+    transition: all .3s ease-in-out;
+    max-width: 85vw;
+    right: -200%;
+    min-height: 100vh;
+    background: #ffffff;
+    padding-top: 117px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 45px;
+
+    .title {
+      position: absolute;
+      top: 55px;
+      left: 0;
+      right: 21%;
+      background: #F21915;
+      height: 40px;
+
+      &:before {
+        content: "Меню";
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        color: #FFFFFF;
+        left: 30px;
+        position: absolute;
+      }
+    }
+
+    .logo-mob {
+      max-width: 196px;
+      max-height: 61px;
+      margin-left: 30px;
+    }
+
+    .right-menu {
+      padding-left: 30px;
+
+      li {
+        margin-top: 22px;
+      }
+
+      li:first-child {
+        margin-top: 0;
+      }
+
+      li a {
+        font-size: 18px;
+        line-height: 23px;
+        color: #151515;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .social {
+      padding-left: 30px;
+      margin-bottom: 20px;
+
+      a {
+        color: #000 !important;
+        text-decoration: none;
+      }
+    }
+
+    .address {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+      position: relative;
+
+      p {
+        font-size: 18px;
+        line-height: 23px;
+        color: #151515;
+        margin: 0;
+      }
+
+      a {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 28px;
+        color: #151515;
+      }
+    }
+
+    &.show {
+      right: -15px;
+      z-index: 2;
+      opacity: 1;
+      transition: all .3s ease-in-out;
+    }
   }
 
   // c крестиком
@@ -104,25 +217,25 @@
 
     span {
       position: absolute;
-      background-color: #1D1D1D;
+      background-color: #fff;
       width: 100%;
       height: 2px;
-      top: 50%;
+      top: 49%;
       right: 0;
       margin-top: 0;
       opacity: 1;
       &:before {
         position: absolute;
-        background: #1D1D1D;
+        background: #fff;
         width: 18px;
         height: 2px;
         bottom: 5px;
         content: "";
         display: block;
       }
-      &:after{
+      &:after {
         position: absolute;
-        background: #1D1D1D;
+        background: #fff;
         width: 18px;
         height: 2px;
         top: 5px;
@@ -137,21 +250,20 @@
       background-color: transparent;
       transition: all .3s ease-in-out;
       &:before {
-        background-color: #1D1D1D;
+        background-color: #000;
         transform: rotate(-45deg);
         top: 0;
         position: absolute;
         transition: all .3s ease-in-out;
       }
       &:after {
-        background-color: #1D1D1D;
+        background-color: #000;
         transform: rotate(45deg);
         top: 0;
         position: absolute;
         transition: all .3s ease-in-out;
       }
     }
-
   }
 
   .change-img {
@@ -165,14 +277,14 @@
 
   ///media
 
-  @media (max-width: 1146px) {
-    //.phone {
-    //  display: block;
-    //}
+  @media (max-width: 1440px) {
+    top: 0;
+  }
+
+  @media (max-width: 1242px) {
 
     .header__inner {
       display: flex;
-
       flex-wrap: wrap;
       flex-direction: column;
       align-items: inherit;
@@ -180,7 +292,6 @@
 
     .main-nav {
       display: none;
-      padding-top: 14px;
     }
 
     .menu li {
@@ -196,45 +307,54 @@
       text-align: center;
     }
 
-    .menu a {
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: -.02em;
-      font-style: normal;
-      font-size: 15px;
-      color: #000000;
-      display: block;
-      margin-bottom: 18px;
-    }
-
     .toggle-menu {
       display: block;
+      z-index: 3;
     }
   }
 
-  @media (max-width: 625px) {
-    .address p {
-      display: flex;
+  @media (max-width: 768px) {
+    padding: 24px 0;
+
+    .mobile-menu {
+      top: -24px;
+
+      .title {
+        top: 32px;
+      }
     }
 
-  }
+    .address {
+      a {
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
 
-  @media (max-width: 460px) {
     .logo {
-      max-width: 80px;
-      max-height: 30px;
-    }
-    .address p {
-      font-size: 12px;
-      margin: 0 0 0 10px;
-    }
-
-    .phone {
-      margin-left: 10px;
-      font-size: 13px;
+      max-width: 135px;
+      max-height: 42px;
     }
   }
 
-}
+  @media (max-width: 480px) {
+    .address {
+      display: none;
+    }
 
-////////////////////////HEADER END////////////////////////
+    .mobile-menu {
+      .title {
+        top: 29px;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .mobile-menu {
+      padding-top: 96px;
+      padding-bottom: 15px;
+    }
+  }
+}

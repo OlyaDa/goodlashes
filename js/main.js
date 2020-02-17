@@ -11,23 +11,52 @@ $(document).ready(function() {
     $('.popup-link').magnificPopup();
 });
 
+// //mobile menu (header)
+//
+// $(function(){
+//     $('.toggle-menu').on('click',function(){
+//         $('.main-nav').toggleClass('open');
+//         $('.header').toggleClass('bg');
+//         $( ".toggle-menu" ).toggleClass( "menu-on");
+//     });
+// });
+//
+// $(document).ready(function() {
+//     $(document).ready(function() {
+//         $('.nav-link-new').click(function () {
+//             $('.main-nav').removeClass('open');
+//             $('.toggle-menu').removeClass('menu-on');
+//         });
+//
+//     });
+// });
+
+
 //mobile menu (header)
 
 $(function(){
     $('.toggle-menu').on('click',function(){
-        $('.main-nav').toggleClass('open');
-        $('.header').toggleClass('bg');
+        $('.mobile-menu').toggleClass('show');
         $( ".toggle-menu" ).toggleClass( "menu-on");
     });
 });
 
 $(document).ready(function() {
+    $('.mobile-menu').click(function () {
+        $('.mobile-menu').removeClass('show');
+        $('.toggle-menu').removeClass('menu-on');
+    });
+
     $(document).ready(function() {
         $('.nav-link-new').click(function () {
-            $('.main-nav').removeClass('open');
+            $('.mobile-menu').removeClass('show');
             $('.toggle-menu').removeClass('menu-on');
         });
 
+        $('.cls').click(function () {
+            $('.mobile-menu').removeClass('show');
+            $('.toggle-menu').removeClass('menu-on');
+        });
     });
 });
 
@@ -52,10 +81,10 @@ $('.cosmetics-slider').slick({
             }
         },
         {
-            breakpoint: 769,
+            breakpoint: 577,
             settings: {
                 slidesToShow: 1,
-                arrows: false,
+                arrows: true,
             }
         },
     ]
@@ -71,14 +100,6 @@ $('.results-slider').slick({
     arrows: true,
     prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-arrow-left"></span> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-arrow-right"></span> </button>',
-    responsive: [
-        {
-            breakpoint: 577,
-            settings: {
-                arrows: false,
-            }
-        },
-    ]
 });
 
 //slider for "reviews"
@@ -91,20 +112,18 @@ $('.reviews-slider').slick({
     // prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-arrow-left"></span> </button>',
     // nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-arrow-right"></span> </button>',
     dots: false,
-    autoplay: false,
+    autoplay: true,
     responsive: [
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 2,
-                arrows: true,
+                slidesToShow: 3,
             }
         },
         {
             breakpoint: 769,
             settings: {
-                slidesToShow: 1,
-                arrows: false,
+                slidesToShow: 2,
             }
         },
     ]

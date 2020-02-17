@@ -1,86 +1,40 @@
 .footer {
-  position: relative;
+  background: #000;
 
-  .title {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 60%;
-    background: #F21915;
-    height: 57px;
-    z-index: 1;
-  }
+  .bottom {
+    padding: 35px 0;
 
-  .left {
-    position: absolute;
-    left: 0;
-    background: #000;
-    width: 49%;
-    height: 100%;
-  }
-
-  .righ {
-    position: absolute;
-    right: 0;
-    width: 51%;
-    height: 100%;
-    background: #fff;
-  }
-
-  ul {
-    margin-top: 174px;
-    position: relative;
-    margin-bottom: 30px;
-
-    &:before {
-      content: "Контакты";
-      font-weight: 600;
-      font-size: 42px;
-      line-height: 53px;
-      color: #FFFFFF;
-      margin: 0;
-      position: absolute;
-      left: 0;
-      top: -92px;
-      z-index: 3;
-    }
-  }
-
-  li a, li {
-    font-size: 18px;
-    line-height: 23px;
-    color: #FFFFFF;
-    margin-bottom: 8px;
-
-    span {
-      margin-right: 13px;
+    .logo {
+      max-width: 144px;
+      max-height: 45px;
     }
 
-    .icon-facebook {
-      margin-right: 15px;
-    }
-  }
-
-  .time {
-    margin-bottom: 42px;
     p {
       font-size: 18px;
       line-height: 23px;
       color: #FFFFFF;
-      margin-bottom: 8px;
-
-      span {
-        font-weight: bold;
-      }
+      margin-bottom: 0;
     }
   }
 
-  .marg {
-    display: block;
-    margin-left: 28px;
+  //media
+  @media (max-width: 991px) {
+    padding-top: 40px;
   }
 
-  .map {
-    background: #000;
+  @media (max-width: 519px) {
+    .bottom {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        text-align: center;
+      }
+
+      .logo {
+        margin-bottom: 20px;
+      }
+    }
   }
 }
